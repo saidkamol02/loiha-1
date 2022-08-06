@@ -1,254 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    scroll-behavior: smooth;
+    text-decoration: none;
+    outline: none;
+    list-style-type: none;
+    text-align: center;
 }
-
-.start {
+.container{
     width: 100%;
-    height: 10vh;
-
 }
 
-nav {
-    z-index: 1000000000;
-    position: fixed;
-    background-color: white;
-}
-
-.start nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+nav{
     width: 100%;
     height: 100px;
-}
-
-.start nav span {
-
-    color: red;
-    font-weight: 600;
-    font-size: 40px;
-}
-
-.start nav p {
-    color: black;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.start nav {
     display: flex;
-    list-style-type: none;
-}
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
 
-.start nav a {
-    margin-left: 20px;
-    text-decoration: none;
+}
+.nav a{
+    margin: 0 15px;
     color: black;
-    font-size: 20px;
-    font-weight: 600;
-    font-size: 20px;
-    transition: .3s ease-in-out;
+    opacity: 0.8;
 }
-
-.start nav li a:hover {
-    color: red;
-}
-
-.main h6 {
-    font-size: 550px;
-    position: absolute;
-    left: 1000px;
-    top: -10px;
-    font-family: "poppins";
-    color: red;
-}
-
-.box h1 {
-    margin-bottom: 20px;
-}
-
-.box {
-    width: 60%;
-    margin: 30px;
-    padding-top: 30px;
-    text-align: justify;
-}
-
-.redline {
-    height: 95vh;
-    background-color: orange;
-    margin-bottom: 30px;
-}
-
-.btn {
+nav button{
     width: 200px;
-    height: 60px;
-    margin-top: 15px;
+    height: 40px;
+    color: #fff;
     border: none;
-    border-radius: 15px;
-    transition: .3s ease-in-out;
+    background-color: grey;
 }
-
-.btn:hover {
-    background-color: red;
+button:hover{
+    background-color: black;
+    color: grey;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
 }
-
-.container2 {
+.kln{
+    font-family: 'Koulen';
+    letter-spacing: 3px ;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(image/bg.png) no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 100%;
-    border: 1px solid red;
+    height: 68vh;
+    color: #fff;
+}
+.btn h1{
+    font-size: 50px;
+}
+.btn button{
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    margin: 30px 0;
+    background-color: black;
 }
 
-.About {
-    width: 100vw;
-    height: 100vh;
+.product{
+    text-align: center;
+    height: 90vh;
+}
+.cards{
+    border: none;
+}
+.card{
+    width: 500px;
+    height: 400px;
+}
+.lrm{
+    text-align: center;
+}
+.cards{
+    margin: 30px 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.box2 {
     margin-top: 30px;
-    width: 32%;
-    height: 430px;
-    border: 3px solid red;
-
 }
-
-.box2 p {
-    opacity: 0.3;
+.card img{
+    width: 500px;
+    height: 400px;
+}
+.lrm h1 {
+    margin-top: 10vh;
+    text-align: center;
+    margin-bottom: 15px;
+}     
+.lrm p{
+    opacity: .8;
+}
+.pro{
+    padding-top: 8vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 300px;
-    color: rgb(94, 92, 92);
-
+    justify-content: space-between;
+    padding-bottom: 15vh;
 }
-
-.box2 h3 {
-    text-align: center;
-    position: relative;
-    top: -230px;
-}
-
-.text {
-    width: 50%;
-    text-align: end;
-}
-
-.box3 {
-    display: flex;
-    justify-content: end;
-    margin-right: 25px;
-}
-
-.box3 p {
-    font-size: 40px;
-
-}
-
-.box3 span {
-    color: red;
-}
-
-.box3 h1 {
-    margin-top: 8px;
-    padding: 0 10px;
-}
-
-.about-text {
-    opacity: 0.6;
-    width: 700px;
-    height: 500px;
-
-    overflow: hidden;
-    padding-right: 20px;
-}
-
-.about-text::-webkit-scrollbar {
-    display: none;
-}
-
-.text {
-    border-right: 4px solid red;
-    padding: 8px 30px;
-}
-
-.Services {
-    width: 100%;
-    height: 86vh;
-    background-color: pink;
-}
-
-.box4 {
-    display: flex;
-    justify-content: center;
-    margin-right: 25px;
-}
-
-.box4 p {
-    font-size: 40px;
-
-}
-
-.box4 span {
-    color: red;
-}
-
-.box4 h1 {
-    margin-top: 8px;
-    padding: 0 10px;
-}
-
-.lrm {
-    text-align: center;
-}
-
-.lrm p {
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.card {
+.box{
     width: 250px;
-    height: 180px;
-    border: 3px solid red;
-    text-align: center;
+    height: 300px;
+}
+.box img{
+    width: 250px;
+    height: 300px;
+}
+.btn2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: url(image/office-bg.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 68vh;
     margin-bottom: 30px;
-}
+} 
 
-.card p {
-    margin-top: 30px;
+.btn2 button{
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    margin: 30px 0;
+    background-color: black;
 }
-.Services{
-    overflow: auto;
+main{
+    height: 90vh;
 }
-.card button {
-    width: 150px;
-    height: 30px;
-    margin-top: 30px;
-    transition: .5s ease-in-out;
-    border: none    ;
+.img{
+    padding: 30px;
+    width: 100%;
+    height: 90vh;
 }
-
-.card button:hover {
-    background-color: red;
-
+.img  h1 {
+    margin: 30px;
+    font-family: 'Koulen';
 }
-
-.servis_bottom {
-    margin-top: 30px;
-    text-align: center; 
+.img  p {
+    margin: 30px;
+    opacity: .78;
+    width: 90%;
 }
